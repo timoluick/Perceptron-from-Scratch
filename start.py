@@ -1,5 +1,6 @@
 import numpy as np
 from perceptron import Perceptron
+from display import Display
 
 PERCEPTRON = Perceptron(input_size=2, lr=0.01)
 
@@ -13,4 +14,5 @@ for i in range(1000):
         error = output - y
         PERCEPTRON.tune_parameters(x, error)
 
-
+DISPLAY = Display(x=100, y=100)
+DISPLAY.display(perceptron=PERCEPTRON)
