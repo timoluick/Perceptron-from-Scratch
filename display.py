@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 class Display:
-    def __init__(self, x, y):
+    def __init__(self, x=100, y=100):
         self.x = x
         self.y = y
 

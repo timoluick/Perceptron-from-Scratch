@@ -14,5 +14,5 @@ for i in range(1000):
         error = output - y
         PERCEPTRON.tune_parameters(x, error)
 
-DISPLAY = Display(x=100, y=100)
+DISPLAY = Display()
 DISPLAY.display(perceptron=PERCEPTRON)
